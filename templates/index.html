@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>SICEI</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>SICEI</h1>
+    </header>
+    <form id="search-form" action="/processing" method="get">
+        <label for="txt">Elige a quién buscar: </label><br>
+        <select name="operation">
+            <option value="deploy_students">Mostrar Alumnos</option>
+            <option value="deploy_teachers">Mostrar Maestros</option>
+        </select>
+        <br><br>
+        <button type="submit" id="btn-procesar">Buscar</button>
+    </form>
+    <main>
+        <div id="resultados_pre">
+            <h2>Resultados:</h2>
+        </div>
+    </main>
+    <script src="/static/js/jsonOutput.js"></script>
+</body>
